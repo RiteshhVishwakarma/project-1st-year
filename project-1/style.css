@@ -42,39 +42,43 @@ header{
 .intro{
     height: 100px;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro p{
     color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    padding-top: 4vh;
+    font-size: 3rem;
+    /* text-align: center; */
+    /* padding-top: 4vh; */
     font-weight: 600;
 }
 
 .services{
     /* background-color: rgb(145, 145, 145); */
     height: 400px;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 20px 30px;
 }
 
 .services .card{
+    border: 1px solid #ccc;
     height: 450px;
     width: 300px;
     /* background-color: white; */
     border-radius: 10px;   
 }
 .services .card img{
-    height: 192;
-    width: 320px;
+    height: auto;
+    max-width: 100%;
     margin: 20px auto;
-    /* border-radius: 50%; */
+    border: 1px solid black;
+    
 }
 
 .services .card h2{
@@ -92,3 +96,37 @@ header{
     transform: scale(1.02);
     transition: 0.3s;
 }
+
+
+
+@media (max-width: 425px) {
+    .text-container h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .text-container p span {
+        font-size: 1rem;
+        display: block;
+        text-align: center;
+    }
+
+    .intro p {
+        font-size: 1.2rem;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .services .card {
+        width: 100%;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+}
+

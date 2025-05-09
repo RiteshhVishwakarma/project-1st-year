@@ -116,6 +116,10 @@ nav{
     margin: 20px 0;
 }
 
+
+/* Grid */
+
+
 @media (max-width: 786px){
     .hero{
         flex-direction: column;
